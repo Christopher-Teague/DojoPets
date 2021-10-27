@@ -8,14 +8,15 @@ class Ninja:
         self.pet = pet
     
     # implement the following methods:
-    def walk(): # - walks the ninja's pet invoking the pet play() method
-        pass
+    def walk(Pet): # - walks the ninja's pet invoking the pet play() method
+        print(f"walking the {Pet}...")
+        Pet.play()
 
-    def feed(): # - feeds the ninja's pet invoking the pet eat() method
-        pass
+    def feed(Pet): # - feeds the ninja's pet invoking the pet eat() method
+        Pet.eat()
 
-    def bathe(): # - cleans the ninja's pet invoking the pet noise() method
-        pass
+    def bathe(Pet): # - cleans the ninja's pet invoking the pet noise() method
+        Pet.noise()
 
 class Pet:
     def __init__ (self, name , type , tricks ):
